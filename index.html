@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment Three</title>
-<!-- tailwind and UI  -->
+    <!-- tailwind and UI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -13,14 +14,15 @@
 
     <!-- font manrope  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-<style>
-    .font-manrope{
-        font-family: 'Manrope', sans-serif;
-    }
-</style>
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="font-manrope">
@@ -29,35 +31,66 @@
 
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li class="text-red-500"><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
                 </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li class="text-red-500"><a>Home</a></li>
-                  <li><a>About</a></li>
-                  <li><a>Pages</a></li>
-                  <li><a>Blog</a></li>
-                  <li><a>Contact</a></li>
-                </ul>
-              </div>
-              <h2 class="text-4xl font-extrabold">Hockey<span class="text-red-600">’</span>s</h2>
+                <h2 class="text-4xl font-extrabold">Hockey<span class="text-red-600">’</span>s</h2>
             </div>
             <div class="navbar-center hidden lg:flex">
-              <ul class="menu menu-horizontal px-1">
-                <li class="text-red-600 font-bold"><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Pages</a></li>
-                <li><a>Blog</a></li>
-                <li><a>Contact</a></li>
-              </ul>
+                <ul class="menu menu-horizontal px-1">
+                    <li class="text-red-600 font-bold"><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
             </div>
             <div class="navbar-end flex gap-5">
                 <i class="fa-solid fa-magnifying-glass hidden lg:block"></i>
-              <a class="btn bg-[#FF4240] py-4 px-6 text-white border-none">Get Ticket</a>
+                <a class="btn bg-[#FF4240] py-4 px-6 text-white border-none">Get Ticket</a>
             </div>
-          </div>
+        </div>
 
+        <!-- banner section  -->
+
+        <section class="my-12">
+
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full bg-cover rounded-2xl" />
+                    <div class="absolute flex gap-5 bottom-2 left-[50%] transform translate-x-[-50%] lg:translate-x-0 lg:left-10 lg:bottom-10">
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/4.png" class="w-full bg-cover rounded-2xl" />
+                    <div class="absolute flex gap-5 bottom-2 left-[50%] transform translate-x-[-50%] lg:translate-x-0 lg:left-10 lg:bottom-10">
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-black text-white border-none">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full h-max lg:w-[560px] bg-black text-white p-8 space-y-4 rounded-2xl lg:-translate-y-60 lg:translate-x-[525px]">
+                <h3 class="text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p>Meet heroes from various fields, showcasing their extraordinary achievements, dedication, and impact. Explore inspiring stories that celebrate individuals making a positive difference in diverse professional domains.</p>
+            </div>
+        </section>
 
     </header>
 
@@ -68,6 +101,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
